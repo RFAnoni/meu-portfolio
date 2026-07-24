@@ -328,8 +328,8 @@ p {
   content: "";
   position: absolute;
   top: 28%; /* Ajuste para ficar exatamente atrás dos quadradinhos com números */
-  left: 5%;
-  right: 10%;
+  left: 12%;
+  right: 12%;
   height: 1px;
   background-color: #333; /* Cor da linha */
   z-index: 1; /* Garante que a linha fique atrás dos números */
