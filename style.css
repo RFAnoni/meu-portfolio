@@ -16,28 +16,49 @@ body {
   background-color: #0f172a;
 }
 
+.flex {
+  display: flex;
+}
+.flex.row {
+  flex-flow: row;
+}
+.flex.column {
+  flex-flow: column;
+}
+/* cabecalho */
+
 .cabecalho {
   background-color: #131b2e;
-  display: flex;
-  flex-flow: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .container-logo {
-  display: flex;
-  flex-flow: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
 
 .container-logo-texto {
-  display: flex;
-  flex-flow: column;
   justify-content: space-between;
   align-items: flex-start;
   color: #bec6e0;
+}
+
+.botao {
+  background-color: #38f577;
+  align-items: center;
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 1rem;
+  font-size: x-small;
+  cursor: pointer;
+
+  & a {
+    color: #0f172a;
+    text-decoration: none;
+  }
 }
 
 header {
@@ -51,46 +72,31 @@ nav ul {
   justify-content: space-around;
   gap: 2.1rem;
   align-items: center;
-}
 
-nav ul li {
-  list-style: none;
-  padding: 1rem;
-}
+  li {
+    list-style: none;
+    padding: 1rem;
 
-.botao {
-  background-color: #38f577;
-  align-items: center;
-  padding: 0.85rem;
-  border-radius: 0.5rem;
-  display: inline-block;
-  margin: 1rem;
-  font-size: x-small;
-  cursor: pointer;
-}
+    a {
+      text-decoration: none;
+      color: #bec6e0;
+      font-weight: bold;
+      font-size: 1.6rem;
+      transition: all 0.2s ease;
 
-ul li a {
-  text-decoration: none;
-  color: #bec6e0;
-  font-weight: bold;
-  font-size: 1.6rem;
+      &:hover,
+      &:visited {
+        color: #38f577;
+        text-decoration: underline;
+        transform: scale(1.1);
+      }
+    }
+  }
 }
-
-ul li a:hover {
-  color: #38f577;
-  text-decoration: underline;
-  transform: scale(1.1);
-}
-
-ul li a:visited {
-  color: #38f577;
-  text-decoration: underline;
-  transform: scale(1.1);
-}
-
 .container {
   max-width: 100rem;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 /* cabecalho */
@@ -145,15 +151,10 @@ p {
 /* sessao hero */
 
 .container-hero {
-  display: flex;
-  flex-flow: row;
   align-items: flex-start;
-  gap: 2rem;
 }
 
 .box-hero {
-  display: flex;
-  flex-flow: column;
   gap: 2rem;
   align-items: flex-start;
   flex: 1;
@@ -170,8 +171,6 @@ p {
 }
 
 .box-botoes {
-  display: flex;
-  flex-flow: row;
   gap: 1rem;
 }
 .metodologia {
@@ -180,20 +179,16 @@ p {
   border-radius: 0.5rem;
   padding: 0.5rem;
   color: #009bd1;
+
+  & a {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #009bd1;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
-.botao a {
-  color: #0f172a;
-  text-decoration: none;
-}
-
-.metodologia a {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  color: #009bd1;
-  text-decoration: none;
-  cursor: pointer;
-}
 /* sessao banner */
 
 .secao-banner {
@@ -201,61 +196,50 @@ p {
 }
 
 .container-banner {
-  display: flex;
   justify-content: space-between;
 }
 
 /* experiencias xp */
 
-.container-blocos-xp {
-  display: flex;
-  flex-flow: column;
-  gap: 2rem;
-}
 .caixa-xp {
   background-color: #131b2e;
   box-shadow: 0px 0px 2px rgb(169 168 168 / 50%);
   border-radius: 0.5rem;
-  display: flex;
-  flex-flow: column;
   align-items: flex-start;
   gap: 1rem;
   padding: 3rem;
   flex: 1; /* Faz o card crescer junto com os outros irmãos no layout */
+
+  & p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: normal;
+  }
 }
 
 .caixa-xp-logo {
   background-color: #0f172a;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
   box-shadow: 0px 0px 2px rgb(169 168 168 / 50%);
   border-radius: 0.5rem;
-}
-
-.caixa-xp p {
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  word-break: normal;
-}
-
-.caixa-xp-logo svg {
-  width: 3rem;
-  background-color: #0f172a;
-  fill: #22f38b;
-  fill-opacity: 1;
-  stroke-width: 0.476881;
+  svg {
+    width: 3rem;
+    background-color: #0f172a;
+    fill: #22f38b;
+    fill-opacity: 1;
+    stroke-width: 0.476881;
+  }
 }
 
 .tag-xp {
   color: #bec6e0;
   font-size: 1.1rem;
-  font-weight: semi-bold;
+  font-weight: 600;
 }
 
 .bloco-box-xp {
-  display: flex;
   gap: 2rem;
   flex-flow: row wrap; /* Permite quebrar linha em telas menores */
   justify-content: flex-start;
@@ -276,8 +260,6 @@ p {
 }
 
 .bloco-xp-descricao {
-  display: flex;
-  flex-flow: row;
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
@@ -289,27 +271,16 @@ p {
 
 /* sessão projetos*/
 
-.container-projetos {
-  display: flex;
-  flex-flow: column;
-  gap: 2rem;
-}
-
 .projetos-titulo {
-  display: flex;
-  flex-flow: row;
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
 }
 
 .agrupa-tags {
-  display: flex;
-  flex-flow: row;
   gap: 0.5rem;
 }
 .blocos-box-projetos {
-  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   gap: 2.5rem;
@@ -320,16 +291,12 @@ p {
   box-shadow: 0px 0px 2px rgb(169 168 168 / 50%);
   padding: 1.5rem;
   border-radius: 0.5rem;
-  display: flex;
-  flex-flow: column;
   width: 48%;
   position: relative;
   gap: 0.85rem;
 }
 
 .secao-projetos {
-  display: flex;
-  flex-flow: column;
   gap: 2rem;
 }
 
@@ -345,14 +312,11 @@ p {
 }
 
 .subtitulo-projeto {
-  display: flex;
-  flex-flow: row;
   justify-content: space-between;
 }
 
 /* sessão workflow */
 .metodologia-container {
-  display: flex; /* Ativa o Flexbox */
   justify-content: space-between; /* Distribui os itens igualmente de ponta a ponta */
   align-items: center; /* Alinha todos verticalmente no centro */
   position: relative;
@@ -363,7 +327,7 @@ p {
 .metodologia-container::before {
   content: "";
   position: absolute;
-  top: 35%; /* Ajuste para ficar exatamente atrás dos quadradinhos com números */
+  top: 28%; /* Ajuste para ficar exatamente atrás dos quadradinhos com números */
   left: 5%;
   right: 10%;
   height: 1px;
@@ -372,8 +336,6 @@ p {
 }
 
 .passos {
-  display: flex;
-  flex-direction: column; /* Faz o número, título e texto ficarem um embaixo do outro */
   align-items: center; /* Centraliza o texto de cada bloco */
   text-align: center;
   z-index: 2; /* Garante que o bloco fique acima da linha conectora */
@@ -385,7 +347,6 @@ p {
   height: 4rem;
   border: 0.2rem solid #00ffcc; /* Borda verde/azul fluorescente */
   border-radius: 0.8rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000;
@@ -393,22 +354,13 @@ p {
   margin-bottom: 15px;
 }
 
-.container-metodologia {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
 .metodologia-titulo {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
 /* footer */
 
 .rodape {
-  display: flex;
-  flex-flow: row;
   background-color: #131b2e;
   justify-content: space-around;
   align-items: center;
@@ -416,20 +368,19 @@ p {
 }
 
 .redes-sociais {
-  display: flex;
-  flex-flow: row;
   gap: 1rem;
-}
 
-.redes-sociais a {
-  text-decoration: none;
-}
-.redes-sociais a:link {
-  color: #bec6e0;
-}
-.redes-sociais a:hover,
-.redes-sociais a:visited {
-  color: #38f577;
-  text-decoration: underline;
-  transform: scale(1.05);
+  & a {
+    text-decoration: none;
+
+    &:link {
+      color: #bec6e0;
+    }
+    &:visited,
+    &:hover {
+      color: #38f577;
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+  }
 }
