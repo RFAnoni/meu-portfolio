@@ -7,17 +7,32 @@ export const projetosData = [
         descricao: "Desenvolvi a Concilia.Já, uma plataforma de alta performance para auditoria e conciliação financeira automatizada. Com foco em engenharia de dados, estruturei o processamento de grandes volumes transacionais (EDI) usando Python, Flask e Polars, otimizando consultas em memória com Parquet. A arquitetura conta com banco MySQL de dupla instância, cache reativo e fila de processamento. Já no frontend, implementei uma interface dinâmica com Alpine.js e Tailwind CSS. Uma solução robusta de BI que demonstra meu domínio em backend e engenharia de dados.",
         // 👇 É AQUI QUE VOCÊ COLOCA O CONTEÚDO DA PÁGINA ESPECÍFICA 👇
         conteudoDetalhado: `
-      <h2>O Problema</h2>
-      <p>A auditoria e conciliação financeira demandava muito tempo e esforço humano, gerando atrasos em relatórios cruciais.</p>
+      <h2 style="display:flex; align-items:center; gap:8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        Objetivo do Projeto
+      </h2>
+      <p>Centralizar, padronizar e auditar todo o fluxo financeiro de vendas e pagamentos originados por múltiplos canais e adquirentes. A plataforma cruza vendas, registros operacionais e extratos bancários, identificando com precisão divergências, depósitos pendentes ou tarifas cobradas acima do contratado.</p>
       
-      <h2>A Solução e Engenharia</h2>
-      <p>Desenvolvi uma pipeline robusta utilizando <strong>Polars</strong> para leitura rápida de arquivos parquet...</p>
-      
+      <h2 style="display:flex; align-items:center; gap:8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+        Funcionalidades Principais
+      </h2>
       <ul>
-        <li>Redução de 80% do tempo de processamento.</li>
-        <li>Persistência dos dados no Mysql.</li>
-        <li>Automatização das tarefas.</li>
-        <li>.</li>
+        <li><strong>Dashboard Executivo:</strong> Visão consolidada de KPIs da saúde financeira, projeções de fluxo de caixa futuro, aging de recebíveis e comparativo de adquirentes (Market Share).</li>
+        <li><strong>Dashboard de Auditoria:</strong> Classificação inteligente do status de cada transação (Conciliado, Em Aberto, Divergente, Cancelado) e análise de cancelamentos.</li>
+        <li><strong>Conciliação Bancária Automatizada:</strong> Batimento sistemático e identificação automática de depósitos divergentes baseados em contas multi-próprias.</li>
+        <li><strong>Auditoria de Custos e Ajustes:</strong> Acompanhamento de Custo Efetivo Total (CET %), rastreamento de chargebacks, e auditoria do fluxo contábil através da Posição Congelada.</li>
+      </ul>
+
+      <h2 style="display:flex; align-items:center; gap:8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M17 2v20"/><path d="M7 22V6l10-4"/><path d="M7 10h10"/><path d="M7 14h10"/><path d="M7 18h10"/></svg>
+        Engenharia & Arquitetura de Dados
+      </h2>
+      <ul>
+        <li><strong>Motor Ultra Rápido (Polars & Parquet):</strong> Consultas e relatórios massivos rodam de forma instantânea na memória usando processamento vetorizado, sem onerar o banco de dados.</li>
+        <li><strong>Cache Auto-Healing (Sincronismo Transparente):</strong> Invalidação e reconstrução autônoma de partições no Redis/Disco sempre que novas cargas assíncronas acontecem.</li>
+        <li><strong>Conexões Isoladas (Dual Instance DB):</strong> Arquitetura distribuída no MySQL 8.x resguardando segurança da autenticação contra a pesada ingestão de dados transacionais.</li>
+        <li><strong>Consciência de Canal (Acquirer-Aware UI):</strong> Interface dinâmica desenhada com Alpine.js e Tailwind CSS que se auto-ajusta ao contexto operacional (Fiserv, Adiq, Sicoob, etc).</li>
       </ul>
     `,
         tags: ["Flask", "Tailwind CSS", "Python", "MySQL"],

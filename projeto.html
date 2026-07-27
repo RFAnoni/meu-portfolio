@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalhes do Projeto - Ryan Ferreira</title>
@@ -9,96 +8,106 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="assets/js/projeto.js"></script>
     <style>
-        .btn-voltar {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-            color: var(--accent-primary);
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
+      .btn-voltar {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        color: var(--accent-primary);
+        font-weight: bold;
+        transition: transform 0.2s;
+      }
 
-        .btn-voltar:hover {
-            transform: translateX(-5px);
-        }
+      .btn-voltar:hover {
+        transform: translateX(-5px);
+      }
 
-        .projeto-detalhe-hero {
-            width: 100%;
-            height: 40rem;
-            object-fit: cover;
-            border-radius: 1rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 4px 6px var(--shadow-color);
-        }
+      .projeto-detalhe-hero {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 4px 6px var(--shadow-color);
+      }
 
-        .projeto-header {
-            margin-bottom: 2rem;
-        }
+      .projeto-header {
+        margin-bottom: 2rem;
+      }
 
-        .projeto-header h1 {
-            font-size: 3.6rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
+      .projeto-header h1 {
+        font-size: 3.6rem;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+      }
 
-        .projeto-tags {
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
+      .projeto-tags {
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
 
-        .projeto-conteudo {
-            font-size: 1.8rem;
-            line-height: 1.6;
-            color: var(--text-secondary);
-            margin-bottom: 4rem;
-        }
+      .projeto-conteudo {
+        font-size: 1.8rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        margin-bottom: 4rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="cabecalho flex row">
-            <div class="container-logo flex row">
-                <img src="./assets/img/sql-logo.svg" alt="Logo do Portfolio" />
-                <div class="container-logo-texto flex column">
-                    <span>Ryan Ferreira</span>
-                    <span>Análise de Dados & Automação </span>
-                </div>
-            </div>
+      <nav class="cabecalho flex row">
+        <div class="container-logo flex row">
+          <img src="./assets/img/sql-logo.svg" alt="Logo do Portfolio" />
+          <div class="container-logo-texto flex column">
+            <span>Ryan Ferreira</span>
+            <span>Análise de Dados & Automação </span>
+          </div>
+        </div>
 
-            <div class="flex row" style="align-items: center; gap: 1rem;">
-                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar Tema">
-                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M12,3A9,9,0,1,0,21,12,9,9,0,0,0,12,3Zm0,16a7,7,0,1,1,7-7A7,7,0,0,1,12,19ZM12,6V18A6,6,0,1,0,12,6Z" />
-                    </svg>
-                </button>
-            </div>
-        </nav>
+        <div class="flex row" style="align-items: center; gap: 1rem">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Alternar Tema"
+          >
+            <svg
+              id="theme-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,3A9,9,0,1,0,21,12,9,9,0,0,0,12,3Zm0,16a7,7,0,1,1,7-7A7,7,0,0,1,12,19ZM12,6V18A6,6,0,1,0,12,6Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main class="container secao">
-        <a href="index.html#projetos" class="btn-voltar">
-            <span>&larr;</span> Voltar para Home
-        </a>
+      <a href="index.html#projetos" class="btn-voltar">
+        <span>&larr;</span> Voltar para Home
+      </a>
 
-        <div id="projeto-conteiner">
-            <!-- O conteúdo será injetado pelo JavaScript projeto.js -->
-            <h2 style="text-align: center;">Carregando Detalhes do Projeto...</h2>
-        </div>
+      <div id="projeto-conteiner">
+        <!-- O conteúdo será injetado pelo JavaScript projeto.js -->
+        <h2 style="text-align: center">Carregando Detalhes do Projeto...</h2>
+      </div>
     </main>
 
     <footer>
-        <div class="rodape flex row">
-            <div>
-                <h3>Portfolio</h3>
-            </div>
-            <div>
-                <p class="testes-img">Copyright &copy; 2026</p>
-            </div>
+      <div class="rodape flex row">
+        <div>
+          <h3>Portfolio</h3>
         </div>
+        <div>
+          <p>
+            Copyright &copy; 2026 Ryan Ferreira. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
