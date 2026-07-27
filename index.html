@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Ferreira | Portfólio de Dados & Engenharia</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon-rfa.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon-rfa.svg" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="assets/js/main.js"></script>
   </head>
   <body>
     <!-- cabecalho -->
@@ -13,7 +14,7 @@
       <nav class="cabecalho flex row">
         <div class="container-logo flex row">
           <img
-            src="./assets/sql-logo.svg"
+            src="./assets/img/sql-logo.svg"
             width="50rem"
             alt="Logo do Portfolio"
           />
@@ -104,7 +105,7 @@
           <div class="bloco-box-xp flex">
             <div class="caixa-xp flex column">
               <div class="caixa-xp-logo flex">
-                <img src="./assets/python.svg" alt="Logo do Python" />
+                <img src="./assets/img/python.svg" alt="Logo do Python" />
               </div>
               <h3>Python</h3>
               <p>
@@ -115,7 +116,7 @@
             </div>
             <div class="caixa-xp flex column">
               <div class="caixa-xp-logo flex">
-                <img src="./assets/sql-cloud.svg" alt="Logo do SQL" />
+                <img src="./assets/img/sql-cloud.svg" alt="Logo do SQL" />
               </div>
               <h3>SQL</h3>
               <p>
@@ -126,7 +127,10 @@
             </div>
             <div class="caixa-xp flex column">
               <div class="caixa-xp-logo flex">
-                <img src="./assets/ferramentas-bi.svg" alt="Logo do Power BI" />
+                <img
+                  src="./assets/img/ferramentas-bi.svg"
+                  alt="Logo do Power BI"
+                />
               </div>
               <h3>Ferramentas Bi</h3>
               <div>
@@ -139,7 +143,10 @@
             </div>
             <div class="caixa-xp flex column">
               <div class="caixa-xp-logo flex">
-                <img src="./assets/amazon-ec2.svg" alt="Logo do Amazon EC2" />
+                <img
+                  src="./assets/img/amazon-ec2.svg"
+                  alt="Logo do Amazon EC2"
+                />
               </div>
               <h3>Cloud</h3>
               <p>
@@ -321,11 +328,11 @@
           </div>
           <div class="redes-sociais flex row">
             <div class="img-redesociais flex">
-              <img src="/assets/github.svg" alt="Icone Github" />
+              <img src="/assets/img/github.svg" alt="Icone Github" />
               <a target="_blank" href="https://github.com/RFAnoni">GitHub</a>
             </div>
             <div class="img-redesociais flex">
-              <img src="/assets/linkedin.svg" alt="Icone LinkedIn" />
+              <img src="/assets/img/linkedin.svg" alt="Icone LinkedIn" />
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/ryan-victor-ferreira/"
@@ -340,5 +347,24 @@
         </div>
       </footer>
     </main>
+    <!-- Banner / Card Flutuante de Aviso -->
+    <div id="aviso-desenvolvimento" class="toast-flutuante">
+      <div class="toast-conteudo">
+        <div class="toast-texto">
+          <div class="alinha-aviso flex">
+            <img src="./assets/img/warning.svg" alt="Ícone de aviso" />
+            <strong> Site em Desenvolvimento</strong>
+          </div>
+          <p>Algumas funcionalidades e dados estão sendo atualizados.</p>
+        </div>
+        <button
+          id="btn-fechar-aviso"
+          class="btn-fechar"
+          aria-label="Fechar aviso"
+        >
+          &times;
+        </button>
+      </div>
+    </div>
   </body>
 </html>
