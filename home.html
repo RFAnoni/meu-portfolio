@@ -66,21 +66,21 @@
 
       <section class="secao secao-banner">
         <div class="container container-banner flex">
-          <div>
-            <h2>Banner</h2>
-            <h3>Descrição do banner</h3>
+          <div class="banner-alinha flex column">
+            <h2>Projetos</h2>
+            <h3>+5</h3>
           </div>
-          <div>
-            <h2>Banner2</h2>
-            <h3>Descrição do banner</h3>
+          <div class="banner-alinha flex column">
+            <h2>Dados</h2>
+            <h3>+10GB</h3>
           </div>
-          <div>
-            <h2>Banner3</h2>
-            <h3>Descrição do banner</h3>
+          <div class="banner-alinha flex column">
+            <h2>Automações</h2>
+            <h3>100%</h3>
           </div>
-          <div>
-            <h2>Banner4</h2>
-            <h3>Descrição do banner</h3>
+          <div class="banner-alinha flex column">
+            <h2>Cloud & DevOps</h2>
+            <h3>Ambiente Cloud</h3>
           </div>
         </div>
       </section>
@@ -97,9 +97,9 @@
               relevância e eficácia no contexto de análise de dados, engenharia
               de dados e automação.
             </p>
-            <div class="remove-quebra">
+            <!-- <div class="remove-quebra">
               <p>Competências Essenciais</p>
-            </div>
+            </div> -->
           </div>
           <div class="bloco-box-xp flex">
             <div class="caixa-xp flex column">
@@ -107,7 +107,10 @@
                 <img src="./assets/python.svg" alt="Logo do Python" />
               </div>
               <h3>Python</h3>
-              <p>Descrição da experiência profissional testando testeteste.</p>
+              <p>
+                Pandas, Polars, NumPy e Flask. Desenvolvimento de scripts,
+                automações e APIs.
+              </p>
               <div class="tags tag-xp">Avançado</div>
             </div>
             <div class="caixa-xp flex column">
@@ -115,7 +118,10 @@
                 <img src="./assets/sql-cloud.svg" alt="Logo do SQL" />
               </div>
               <h3>SQL</h3>
-              <p>Descrição da experiência profissional.</p>
+              <p>
+                Queries complexas, otimização de banco de dados e integração com
+                aplicações.
+              </p>
               <div class="tags tag-xp">Avançado</div>
             </div>
             <div class="caixa-xp flex column">
@@ -124,20 +130,22 @@
               </div>
               <h3>Ferramentas Bi</h3>
               <div>
-                <p class="teste">Descrição da experiência profissional.</p>
+                <p class="teste">
+                  Power BI e Excel Criação de dashboards interativos e
+                  relatórios analíticos.
+                </p>
               </div>
               <div class="tags tag-xp">Avançado</div>
             </div>
             <div class="caixa-xp flex column">
               <div class="caixa-xp-logo flex">
-                <img
-                  src="./assets/storytelling-svg.svg"
-                  alt="Logo do Storytelling"
-                />
+                <img src="./assets/amazon-ec2.svg" alt="Logo do Amazon EC2" />
               </div>
-              <h3>Storytelling</h3>
-              <p>Descrição da experiência profissional.</p>
-              <div class="tags tag-xp">Avançado</div>
+              <h3>Cloud</h3>
+              <p>
+                Gerenciamento de servidores Linux em nuvem (AWS EC2) e deploys.
+              </p>
+              <div class="tags tag-xp">Intermediário</div>
             </div>
           </div>
         </div>
@@ -163,7 +171,7 @@
               </div>
               <div class="subtitulo-projeto flex row">
                 <h3>Conciliadora</h3>
-                <p>%Ind</p>
+                <p>100%</p>
               </div>
               <p>
                 Desenvolvi a Concilia.Já, uma plataforma de alta performance
@@ -180,6 +188,7 @@
                 <div class="tags">Flask</div>
                 <div class="tags">Tailwind CSS</div>
                 <div class="tags">Python</div>
+                <div class="tags">MySQL</div>
               </div>
             </div>
             <div class="box-projetos flex column">
@@ -259,35 +268,47 @@
           <div class="metodologia-titulo flex column">
             <h2>Metodologia de Dados</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-              voluptates, explicabo tempora atque quod minima dolores. Fugiat
-              non corporis ratione provident amet delectus, saepe eius, ullam
-              veritatis voluptatum eligendi. Est.
+              Uma estrutura ponta a ponta projetada para garantir eficiência,
+              alta performance e integridade dos dados. Do pipeline de ingestão
+              à entrega final, cada etapa é otimizada para transformar
+              complexidade em clareza.
             </p>
           </div>
           <div class="metodologia-container flex">
             <div class="passos flex column">
               <div class="number flex">1</div>
-              <h3>Ingestion</h3>
-              <p>ETL Pipelines & API Integration</p>
+              <h3>Ingestão</h3>
+              <p>
+                Conexão com bancos de dados, leitura de arquivos (EDI/CSV) e
+                integração via APIs ou rotinas ERP
+              </p>
             </div>
 
             <div class="passos flex column">
               <div class="number flex">2</div>
-              <h3>Cleaning</h3>
-              <p>Wrangling & Normalization</p>
+              <h3>Tratamento</h3>
+              <p>
+                Limpeza, padronização e estruturação dos dados utilizando Python
+                (Polars/Pandas) e SQL otimizado.
+              </p>
             </div>
 
             <div class="passos flex column">
               <div class="number flex">3</div>
-              <h3>Modeling</h3>
-              <p>Stat Inference & ML Tuning</p>
+              <h3>Regras & Conciliação</h3>
+              <p>
+                Aplicação de lógica de negócios, validação de consistência e
+                processamento de regras financeiras/operacionais.
+              </p>
             </div>
 
             <div class="passos flex column">
               <div class="number flex">4</div>
-              <h3>Delivery</h3>
-              <p>Dashboards & API Endpoints</p>
+              <h3>Entrega</h3>
+              <p>
+                Disponibilização de relatórios automatizados, dashboards
+                interativos ou persistência em banco de dados para consumo.
+              </p>
             </div>
           </div>
         </div>
@@ -299,12 +320,18 @@
             <h3>Portfolio</h3>
           </div>
           <div class="redes-sociais flex row">
-            <a target="_blank" href="https://github.com/RFAnoni">GitHub</a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ryan-victor-ferreira/"
-              >LinkedIn</a
-            >
+            <div class="img-redesociais flex">
+              <img src="/assets/github.svg" alt="Icone Github" />
+              <a target="_blank" href="https://github.com/RFAnoni">GitHub</a>
+            </div>
+            <div class="img-redesociais flex">
+              <img src="/assets/linkedin.svg" alt="Icone LinkedIn" />
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ryan-victor-ferreira/"
+                >LinkedIn</a
+              >
+            </div>
           </div>
 
           <div>

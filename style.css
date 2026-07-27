@@ -197,6 +197,19 @@ p {
 
 .container-banner {
   justify-content: space-between;
+
+  .banner-alinha {
+    gap: 0.2rem;
+    align-items: center;
+  }
+  & h2 {
+    color: #38f577;
+    font-size: 1.4rem;
+  }
+  & h3 {
+    color: #bec6e0;
+    font-size: 2.4rem;
+  }
 }
 
 /* experiencias xp */
@@ -316,27 +329,45 @@ p {
 /* sessão workflow */
 .metodologia-container {
   justify-content: space-between; /* Distribui os itens igualmente de ponta a ponta */
-  align-items: center; /* Alinha todos verticalmente no centro */
+  align-items: flex-start; /* Alinha todos verticalmente no centro */
   position: relative;
   padding: 2rem;
-}
-
-/* Opcional: Para fazer a linha fina conectando os passos atrás deles */
-.metodologia-container::before {
-  content: "";
-  position: absolute;
-  top: 28%; /* Ajuste para ficar exatamente atrás dos quadradinhos com números */
-  left: 12%;
-  right: 12%;
-  height: 1px;
-  background-color: #333; /* Cor da linha */
-  z-index: 1; /* Garante que a linha fique atrás dos números */
 }
 
 .passos {
   align-items: center; /* Centraliza o texto de cada bloco */
   text-align: center;
   z-index: 2; /* Garante que o bloco fique acima da linha conectora */
+  flex: 1 1 0; /* Força todos os elementos a dividirem o espaço igualmente */
+  padding: 0 10px;
+  width: 0;
+  position: relative;
+
+  & h3 {
+    min-height: 3rem; /* Ajuste se necessário para cobrir 2 linhas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+
+    /* Posiciona no centro vertical exato do .number (2rem metade do número) */
+    top: 2rem;
+
+    /* Começa no centro deste número e vai até o centro do próximo */
+    left: 50%;
+    width: 100%;
+
+    height: 2px;
+    background-color: #333;
+
+    /* Coloca a linha atrás da caixinha .number */
+    z-index: -1;
+  }
 }
 
 /* Estilização básica dos quadradinhos com números */
@@ -357,7 +388,10 @@ p {
 }
 
 /* footer */
-
+.img-redesociais {
+  gap: 0.3rem;
+  align-items: center;
+}
 .rodape {
   background-color: #131b2e;
   justify-content: space-around;
