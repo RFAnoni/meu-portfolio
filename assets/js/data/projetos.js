@@ -1,12 +1,13 @@
 export const projetosData = [
-    {
-        id: "conciliadeira",
-        titulo: "Conciliadora",
-        badge: "Conciliadora",
-        porcentagem: "100%",
-        descricao: "Desenvolvi a Concilia.Já, uma plataforma de alta performance para auditoria e conciliação financeira automatizada. Com foco em engenharia de dados, estruturei o processamento de grandes volumes transacionais (EDI) usando Python, Flask e Polars, otimizando consultas em memória com Parquet. A arquitetura conta com banco MySQL de dupla instância, cache reativo e fila de processamento. Já no frontend, implementei uma interface dinâmica com Alpine.js e Tailwind CSS. Uma solução robusta de BI que demonstra meu domínio em backend e engenharia de dados.",
-        // 👇 É AQUI QUE VOCÊ COLOCA O CONTEÚDO DA PÁGINA ESPECÍFICA 👇
-        conteudoDetalhado: `
+  {
+    id: "conciliadeira",
+    titulo: "Conciliadora",
+    badge: "Conciliadora",
+    porcentagem: "100%",
+    descricao:
+      "Desenvolvi a Concilia.Já, uma plataforma de alta performance para auditoria e conciliação financeira automatizada. Com foco em engenharia de dados, estruturei o processamento de grandes volumes transacionais (EDI) usando Python, Flask e Polars, otimizando consultas em memória com Parquet. A arquitetura conta com banco MySQL de dupla instância, cache reativo e fila de processamento. Já no frontend, implementei uma interface dinâmica com Alpine.js e Tailwind CSS. Uma solução robusta de BI que demonstra meu domínio em backend e engenharia de dados.",
+    // 👇 É AQUI QUE VOCÊ COLOCA O CONTEÚDO DA PÁGINA ESPECÍFICA 👇
+    conteudoDetalhado: `
       <h2 style="display:flex; align-items:center; gap:8px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
         Objetivo do Projeto
@@ -35,36 +36,38 @@ export const projetosData = [
         <li><strong>Consciência de Canal (Acquirer-Aware UI):</strong> Interface dinâmica desenhada com Alpine.js e Tailwind CSS que se auto-ajusta ao contexto operacional (Fiserv, Adiq, Sicoob, etc).</li>
       </ul>
     `,
-        tags: ["Flask", "Tailwind CSS", "Python", "MySQL"],
-        imagens: [
-            "/assets/projetos/ConciliaCapa.png",
-            "https://picsum.photos/450/336?random=1",
-            "https://picsum.photos/450/336?random=2"
-        ]
-    },
-    {
-        id: "projeto-dois",
-        titulo: "Pipeline de Dados Otimizado",
-        badge: "Engenharia",
-        porcentagem: "100%",
-        descricao: "Implementação de um pipeline de dados em tempo real utilizando tecnologias modernas para ingestão, tratamento e integração. Focado em escalabilidade e baixa latência para atender demandas analíticas avançadas.",
-        tags: ["AWS", "PySpark", "Airflow"],
-        imagens: [
-            "https://picsum.photos/450/336?random=3",
-            "https://picsum.photos/450/336?random=4"
-        ]
-    },
-    {
-        id: "projeto-tres",
-        titulo: "Dashboard Analítico Financeiro",
-        badge: "BI",
-        porcentagem: "100%",
-        descricao: "Criação de dashboards interativos e performáticos no Power BI interligado a uma base de dados SQL. Permitindo análises rápidas sobre despesas operacionais e insights vitais para o negócio.",
-        tags: ["Power BI", "SQL Server", "DAX"],
-        imagens: [
-            "https://picsum.photos/450/336?random=5",
-            "https://picsum.photos/450/336?random=6",
-            "https://picsum.photos/450/336?random=7"
-        ]
-    }
+    tags: ["Flask", "Tailwind CSS", "Python", "MySQL"],
+    imagens: [
+      "/assets/projetos/ConciliaCapa.png",
+      "/assets/projetos/PainelVendas.png",
+      "/assets/projetos/resumoTransacoes.png",
+    ],
+  },
+  {
+    id: "projeto-dois",
+    titulo: "Pipeline de Dados Otimizado",
+    badge: "Engenharia",
+    porcentagem: "100%",
+    descricao:
+      "Implementação de um pipeline de dados em tempo real utilizando tecnologias modernas para ingestão, tratamento e integração. Focado em escalabilidade e baixa latência para atender demandas analíticas avançadas.",
+    tags: ["AWS", "PySpark", "Airflow"],
+    imagens: [
+      "https://picsum.photos/450/336?random=3",
+      "https://picsum.photos/450/336?random=4",
+    ],
+  },
+  {
+    id: "projeto-tres",
+    titulo: "Dashboard Analítico Financeiro",
+    badge: "BI",
+    porcentagem: "100%",
+    descricao:
+      "Criação de dashboards interativos e performáticos no Power BI interligado a uma base de dados SQL. Permitindo análises rápidas sobre despesas operacionais e insights vitais para o negócio.",
+    tags: ["Power BI", "SQL Server", "DAX"],
+    imagens: [
+      "https://picsum.photos/450/336?random=5",
+      "https://picsum.photos/450/336?random=6",
+      "https://picsum.photos/450/336?random=7",
+    ],
+  },
 ];
