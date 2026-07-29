@@ -777,6 +777,67 @@ footer {
   }
 }
 
+/* Layout Blog Sidebar (projeto.html) */
+.layout-blog {
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sidebar-projetos {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: sticky;
+  top: 9rem;
+}
+
+.sidebar-titulo {
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.sidebar-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-item {
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  user-select: none;
+}
+
+.sidebar-item:hover {
+  background-color: var(--bg-quaternary);
+  color: var(--accent-primary);
+  border-left-color: var(--accent-secondary);
+}
+
+.sidebar-item.ativo {
+  background-color: var(--bg-quaternary);
+  color: var(--accent-primary);
+  font-weight: 600;
+  border-left-color: var(--accent-primary);
+}
+
+.projeto-conteudo-main {
+  flex: 1;
+  min-width: 0;
+}
+
 /* RESPONSIVE DESIGN - MEDIA QUERIES */
 
 /* Tablets */
@@ -791,6 +852,16 @@ footer {
   html {
     font-size: 55%;
     /* Reduce base font size for smaller screens */
+  }
+
+  .layout-blog {
+    flex-direction: column;
+  }
+
+  .sidebar-projetos {
+    flex: none;
+    width: 100%;
+    position: static;
   }
 
   /* Header adjustments */
