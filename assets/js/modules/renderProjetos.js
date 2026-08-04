@@ -55,7 +55,7 @@ export function initRenderProjetos() {
           ${tagsHtml}
         </div>
         <div class="flex row" style="margin-top: 1rem;">
-           <a href="projeto.html?id=${projeto.id}" class="badge">Ver Detalhes -></a>
+           <a href="projeto.html?id=${projeto.id}" class="badge">Ver Detalhes &#8594;</a>
         </div>
       </div>
     `;
